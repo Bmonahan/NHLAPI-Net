@@ -1,0 +1,11 @@
+/Users/Brysenmonahan/C#/NhlAPITest/bin/Debug/netcoreapp2.1/NhlAPITest.deps.json
+/Users/Brysenmonahan/C#/NhlAPITest/bin/Debug/netcoreapp2.1/NhlAPITest.runtimeconfig.json
+/Users/Brysenmonahan/C#/NhlAPITest/bin/Debug/netcoreapp2.1/NhlAPITest.runtimeconfig.dev.json
+/Users/Brysenmonahan/C#/NhlAPITest/bin/Debug/netcoreapp2.1/NhlAPITest.dll
+/Users/Brysenmonahan/C#/NhlAPITest/bin/Debug/netcoreapp2.1/NhlAPITest.pdb
+/Users/Brysenmonahan/C#/NhlAPITest/obj/Debug/netcoreapp2.1/NhlAPITest.csprojAssemblyReference.cache
+/Users/Brysenmonahan/C#/NhlAPITest/obj/Debug/netcoreapp2.1/NhlAPITest.csproj.CoreCompileInputs.cache
+/Users/Brysenmonahan/C#/NhlAPITest/obj/Debug/netcoreapp2.1/NhlAPITest.AssemblyInfoInputs.cache
+/Users/Brysenmonahan/C#/NhlAPITest/obj/Debug/netcoreapp2.1/NhlAPITest.AssemblyInfo.cs
+/Users/Brysenmonahan/C#/NhlAPITest/obj/Debug/netcoreapp2.1/NhlAPITest.dll
+/Users/Brysenmonahan/C#/NhlAPITest/obj/Debug/netcoreapp2.1/NhlAPITest.pdb
