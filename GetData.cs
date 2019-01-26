@@ -219,266 +219,266 @@ namespace NhlAPITest
                             if (data != null){
                                 for(int i = 0;i<length;i++){
                                     var temp = mes.dates[0].games[i];
-                                    Console.WriteLine(temp.gamePk+" - "+temp.teams.home.team.name+" vs. "+temp.teams.away.team.name);
+                                    Console.WriteLine(mes.dates[0].date+" - "+temp.gamePk+" - "+temp.teams.home.team.name+" vs. "+temp.teams.away.team.name);
                                 }
                             }
                     }
         }
-    }
-    public class Team{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string link {get;set;}
-        public venue venue {get;set;}
-        public string abbreviation {get;set;}
-        public string teamName {get;set;}
-        public string locationName {get;set;}
-        public int firstYearOfPlay {get;set;}
-        public division division {get;set;}
-        public conference conference {get;set;}
-        public franchise franchise {get;set;}
-        public string shortName {get;set;}
-        public string officialSiteUrl {get;set;}
-        public int franchiseId {get;set;}
-        public Boolean active {get;set;}
-    }
-    public class Message{
-        public string copyright {get;set;}
-        public List<Team> teams {get;set;}
-    }
+}
+//     public class Team{
+//         public int id {get;set;}
+//         public string name {get;set;}
+//         public string link {get;set;}
+//         public venue venue {get;set;}
+//         public string abbreviation {get;set;}
+//         public string teamName {get;set;}
+//         public string locationName {get;set;}
+//         public int firstYearOfPlay {get;set;}
+//         public division division {get;set;}
+//         public conference conference {get;set;}
+//         public franchise franchise {get;set;}
+//         public string shortName {get;set;}
+//         public string officialSiteUrl {get;set;}
+//         public int franchiseId {get;set;}
+//         public Boolean active {get;set;}
+//     }
+//     public class Message{
+//         public string copyright {get;set;}
+//         public List<Team> teams {get;set;}
+//     }
 
-// For /teams/:id/roster
-    public class RosterMessage{
-        public string copyright {get;set;}
-        public List<RosterItems> roster {get;set;}
-        public string link {get;set;}
-    }
+// // For /teams/:id/roster
+//     public class RosterMessage{
+//         public string copyright {get;set;}
+//         public List<RosterItems> roster {get;set;}
+//         public string link {get;set;}
+//     }
 
-    public class RosterItems{
-        public person person {get;set;}
-        public string jerseyNumber {get;set;}
-        public position position {get;set;}
-    }
+//     public class RosterItems{
+//         public person person {get;set;}
+//         public string jerseyNumber {get;set;}
+//         public position position {get;set;}
+//     }
 
-    public class person{
-        public int id {get;set;}
-        public string fullName {get;set;}
-        public string link {get;set;}
-    }
+//     public class person{
+//         public int id {get;set;}
+//         public string fullName {get;set;}
+//         public string link {get;set;}
+//     }
 
-    public class position{
-        public string code {get;set;}
-        public string name {get;set;}
-        public string type {get;set;}
-        public string abbreviation {get;set;}
-    }
+//     public class position{
+//         public string code {get;set;}
+//         public string name {get;set;}
+//         public string type {get;set;}
+//         public string abbreviation {get;set;}
+//     }
 
-    //For teams/id || teams
-    public class venue{
-        public string name {get;set;}
-        public string link {get;set;}
-        public string city {get;set;}
-        public timeZone timeZone {get;set;}
-    }
+//     //For teams/id || teams
+//     public class venue{
+//         public string name {get;set;}
+//         public string link {get;set;}
+//         public string city {get;set;}
+//         public timeZone timeZone {get;set;}
+//     }
 
-    public class timeZone{
-        public string id {get;set;}
-        public int offset {get;set;}
-        public string tz {get;set;}
-    }
+//     public class timeZone{
+//         public string id {get;set;}
+//         public int offset {get;set;}
+//         public string tz {get;set;}
+//     }
 
-    public class division{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string nameShort {get;set;}
-        public string link {get;set;}
-        public string abbreviation {get;set;}
-    }
+//     public class division{
+//         public int id {get;set;}
+//         public string name {get;set;}
+//         public string nameShort {get;set;}
+//         public string link {get;set;}
+//         public string abbreviation {get;set;}
+//     }
 
-    public class conference{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string link {get;set;}
-    }
+//     public class conference{
+//         public int id {get;set;}
+//         public string name {get;set;}
+//         public string link {get;set;}
+//     }
 
-    public class franchise{
-        public int franchiseId {get;set;}
-        public string teamName {get;set;}
-        public string link {get;set;}
-    }
+//     public class franchise{
+//         public int franchiseId {get;set;}
+//         public string teamName {get;set;}
+//         public string link {get;set;}
+//     }
 
 
     //For /divisions
-    public class divisionMessage{
-        public string copyright {get;set;}
-        public List<divisionMaster> divisions {get;set;}
-    }
+    // public class divisionMessage{
+    //     public string copyright {get;set;}
+    //     public List<divisionMaster> divisions {get;set;}
+    // }
 
-    public class divisionMaster{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string nameShort {get;set;}
-        public string link {get;set;}
-        public string abbreviation {get;set;}
-        public conference conference {get;set;}
-        public Boolean active {get;set;}
-    }
-    // For updating and creating team valid ID list
+    // public class divisionMaster{
+    //     public int id {get;set;}
+    //     public string name {get;set;}
+    //     public string nameShort {get;set;}
+    //     public string link {get;set;}
+    //     public string abbreviation {get;set;}
+    //     public conference conference {get;set;}
+    //     public Boolean active {get;set;}
+    // }
+    // // For updating and creating team valid ID list
 
-    public class idList{
-        public int id {get;set;}
-        public string name {get;set;}
-    }
+    // public class idList{
+    //     public int id {get;set;}
+    //     public string name {get;set;}
+    // }
 
-    // /divisions/:id
+    // // /divisions/:id
 
-    public class divMessageId{
-        public string copyright {get;set;}
-        public List<div> divisions {get;set;}
-    }
+    // public class divMessageId{
+    //     public string copyright {get;set;}
+    //     public List<div> divisions {get;set;}
+    // }
 
-    public class div{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string link {get;set;}
-        public string abbreviation {get;set;}
-        public conference conference {get;set;}
-        public Boolean active {get;set;}
-    }
+    // public class div{
+    //     public int id {get;set;}
+    //     public string name {get;set;}
+    //     public string link {get;set;}
+    //     public string abbreviation {get;set;}
+    //     public conference conference {get;set;}
+    //     public Boolean active {get;set;}
+    // }
 
     // /conferences && conferences/:id
-    public class confMessage{
-        public string copyright {get;set;}
-        public List<conf> conferences {get;set;}
-    }
+    // public class confMessage{
+    //     public string copyright {get;set;}
+    //     public List<conf> conferences {get;set;}
+    // }
 
-    public class conf{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string link {get;set;}
-        public string abbreviation {get;set;}
-        public string shortName {get;set;}
-        public Boolean active {get;set;}
-    }
+    // public class conf{
+    //     public int id {get;set;}
+    //     public string name {get;set;}
+    //     public string link {get;set;}
+    //     public string abbreviation {get;set;}
+    //     public string shortName {get;set;}
+    //     public Boolean active {get;set;}
+    // }
 
     // /people/:id
-    public class peopleMessage{
-        public string copyright {get;set;}
-        public List<people> people {get;set;}
-    }
+    // public class peopleMessage{
+    //     public string copyright {get;set;}
+    //     public List<people> people {get;set;}
+    // }
 
-    public class people{
-        public int id {get;set;}
-        public string fullName {get;set;}
-        public string link {get;set;}
-        public string firstName {get;set;}
-        public string lastName {get;set;}
-        public string primaryNumber {get;set;}
-        public string birthDate {get;set;}
-        public int currentAge {get;set;}
-        public string birthCity {get;set;}
-        public string birthStateProvince {get;set;}
-        public string birthCountry {get;set;}
-        public string nationality {get;set;}
-        public string height {get;set;}
-        public int weight {get;set;}
-        public Boolean active {get;set;}
-        public Boolean alternateCaptain {get;set;}
-        public Boolean captain {get;set;}
-        public Boolean rookie {get;set;}
-        public string shootsCatches {get;set;}
-        public string rosterStatus {get;set;}
-        public curTeam currentTeam {get;set;}
-        public primaryPosition primaryPosition {get;set;}
-    }
+    // public class people{
+    //     public int id {get;set;}
+    //     public string fullName {get;set;}
+    //     public string link {get;set;}
+    //     public string firstName {get;set;}
+    //     public string lastName {get;set;}
+    //     public string primaryNumber {get;set;}
+    //     public string birthDate {get;set;}
+    //     public int currentAge {get;set;}
+    //     public string birthCity {get;set;}
+    //     public string birthStateProvince {get;set;}
+    //     public string birthCountry {get;set;}
+    //     public string nationality {get;set;}
+    //     public string height {get;set;}
+    //     public int weight {get;set;}
+    //     public Boolean active {get;set;}
+    //     public Boolean alternateCaptain {get;set;}
+    //     public Boolean captain {get;set;}
+    //     public Boolean rookie {get;set;}
+    //     public string shootsCatches {get;set;}
+    //     public string rosterStatus {get;set;}
+    //     public curTeam currentTeam {get;set;}
+    //     public primaryPosition primaryPosition {get;set;}
+    // }
 
-    public class curTeam{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string link {get;set;}
+    // public class curTeam{
+    //     public int id {get;set;}
+    //     public string name {get;set;}
+    //     public string link {get;set;}
 
-    }
-    public class primaryPosition{
-        public string code {get;set;}
-        public string name {get;set;}
-        public string type {get;set;}
-        public string abbreviation {get;set;}
-    }
+    // }
+    // public class primaryPosition{
+    //     public string code {get;set;}
+    //     public string name {get;set;}
+    //     public string type {get;set;}
+    //     public string abbreviation {get;set;}
+    // }
 
     // /schdule?date=:date
-    public class scheduleMessage{
-        public string copyright {get;set;}
-        public int totalItems {get;set;}
-        public int totalEvents {get;set;}
-        public int totalGames {get;set;}
-        public int totalMatches {get;set;}
-        public int wait {get;set;}
+    // public class scheduleMessage{
+    //     public string copyright {get;set;}
+    //     public int totalItems {get;set;}
+    //     public int totalEvents {get;set;}
+    //     public int totalGames {get;set;}
+    //     public int totalMatches {get;set;}
+    //     public int wait {get;set;}
 
-        public List<dates> dates {get;set;}
+    //     public List<dates> dates {get;set;}
 
-    }
+    // }
 
-    public class dates{
-        public string date {get;set;}
-        public int totalItems {get;set;}
-        public int totalEvents {get;set;}
-        public int totalGames {get;set;}
-        public int totalMatches {get;set;}
-        public List<games> games {get;set;}
-        public List<events> events {get;set;}
-        public List<matches> matches {get;set;}
-    }
-    public class games{
-        public int gamePk {get;set;}
-        public string link {get;set;}
-        public string gameType {get;set;}
-        public string season {get;set;}
-        public string gameDate {get;set;}
-        public status status {get;set;}
-        public teams teams {get;set;}
-        public venueSched venue {get;set;}
-        public content content {get;set;}
-    }
-    public class status{
-        public string abstractGameState {get;set;}
-        public string codedGameState {get;set;}
-        public string detailedState {get;set;}
-        public string statusCode {get;set;}
-        public Boolean startTimeTBD {get;set;}
-    }
-    public class teams{
-        public homeaway away {get;set;}
-        public homeaway home {get;set;}
-    }
-    public class homeaway{
-        public leagueRecord leagueRecord {get;set;}
-        public int score {get;set;}
-        public team team {get;set;}
-    }
-    public class leagueRecord{
-        public int wins {get;set;}
-        public int losses {get;set;}
-        public int ot {get;set;}
-        public string type {get;set;}
+    // public class dates{
+    //     public string date {get;set;}
+    //     public int totalItems {get;set;}
+    //     public int totalEvents {get;set;}
+    //     public int totalGames {get;set;}
+    //     public int totalMatches {get;set;}
+    //     public List<games> games {get;set;}
+    //     public List<events> events {get;set;}
+    //     public List<matches> matches {get;set;}
+    // }
+    // public class games{
+    //     public int gamePk {get;set;}
+    //     public string link {get;set;}
+    //     public string gameType {get;set;}
+    //     public string season {get;set;}
+    //     public string gameDate {get;set;}
+    //     public status status {get;set;}
+    //     public teams teams {get;set;}
+    //     public venueSched venue {get;set;}
+    //     public content content {get;set;}
+    // }
+    // public class status{
+    //     public string abstractGameState {get;set;}
+    //     public string codedGameState {get;set;}
+    //     public string detailedState {get;set;}
+    //     public string statusCode {get;set;}
+    //     public Boolean startTimeTBD {get;set;}
+    // }
+    // public class teams{
+    //     public homeaway away {get;set;}
+    //     public homeaway home {get;set;}
+    // }
+    // public class homeaway{
+    //     public leagueRecord leagueRecord {get;set;}
+    //     public int score {get;set;}
+    //     public team team {get;set;}
+    // }
+    // public class leagueRecord{
+    //     public int wins {get;set;}
+    //     public int losses {get;set;}
+    //     public int ot {get;set;}
+    //     public string type {get;set;}
 
-    }
-    public class team{
-        public int id {get;set;}
-        public string name {get;set;}
-        public string link {get;set;}
-    }
-    public class venueSched{
-        public string name {get;set;}
-        public string link {get;set;}
-    }
-    public class content{
-        public string link {get;set;}
-    }
-    public class events{
+    // }
+    // public class team{
+    //     public int id {get;set;}
+    //     public string name {get;set;}
+    //     public string link {get;set;}
+    // }
+    // public class venueSched{
+    //     public string name {get;set;}
+    //     public string link {get;set;}
+    // }
+    // public class content{
+    //     public string link {get;set;}
+    // }
+    // public class events{
 
-    }
-    public class matches{
+    // }
+    // public class matches{
 
-    }
+    // }
 
 }
